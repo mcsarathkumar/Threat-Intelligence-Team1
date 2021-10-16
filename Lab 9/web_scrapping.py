@@ -4,7 +4,7 @@ import re
 import csv
 import os
 
-OUTPUT_FILE_NAME = os.getcwd() + "\sha_values.csv"
+OUTPUT_FILE_NAME = os.path.join(os.path.dirname(__file__), 'sha_values.csv')
 
 # SHA256 RegExp
 SHA_256_REGEXP = r'[A-Fa-f0-9]{64}'
